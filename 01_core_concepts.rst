@@ -27,8 +27,6 @@ Core Concepts
 
 **Shadows**: are the dark areas that are cast by objects in a scene.
 
-**Frustum**: is the region of space that is visible to the camera. Usually has the form of a truncated pyramid
-
 **Raster**: is an array of pixels that is used to store the image that is being rendered on a screen, arranged in a 2D grid
 
 **Frame**: is a single image that is rendered by the computer
@@ -43,10 +41,22 @@ Core Concepts
 
 **Precision**: is the number of bits used to represent each pixel.
 
+**Shader**: is a program that is executed on the GPU to perform a specific task.
+
+**Vertex Shader**: is a program that runs on the GPU and is responsible for transforming vertices from object coordinates into clip coordinates.
+
+**Fragment Shader**: is a program that runs on the GPU and is responsible for computing the color of each pixel.
+
 Buffers
 ^^^^^^^
 
 **Buffer / data buffer / buffer memory**: is a memory region that is used to store temporary intermediate results of a rendering process.
+
+**Vertex Buffer Object (VBO)**: is a buffer that stores the vertex data for a mesh.
+
+**Index Buffer Object (IBO)**: is a buffer that stores the index data for a mesh.
+
+**Vertex Array Object (VAO)**: is a collection of vertex buffer objects and index buffer objects.
 
 **Frame buffer**: is a buffer that is used to store the final image that is being rendered.
 It may contain color, depth, and stencil information.
@@ -58,7 +68,7 @@ like the number of objects that are visible at each pixel, shadows, reflexions, 
 
 **Color buffer**: is a buffer that is used to store the color of each pixel in the image. Commonly in RGB or RGBA format.
 
-**Other buffers**: Normal buffer, Texture buffer, Shadow buffer, etc.
+**Other buffers**: Normal buffer, Texture buffer, Shadow buffer.
 
 Virtual Camera
 ^^^^^^^^^^^^^^
@@ -72,40 +82,31 @@ that is used to define the region of space that is visible to the camera.
 **Frustum**: is defined by the position of the camera, the direction in which the camera is pointing, and the field of
 view of the camera. The frustum is usually truncated to avoid rendering objects that are too far away from the camera.
 
-**Field of view (FOV)**: is the angle between the left and right edges of the frustum
+**Field of view (FOV) / Aperture**: is the angle between the left and right edges of the frustum
 
-**Near Plane**: is the plane that is closest to the virtual camera.
+- **FOVY**: is the vertical field of view of the camera.
+- **FOVX**: is the horizontal field of view of the camera ( FOVX = 2 * atan(tan(FOVY/2) * aspectRatio) ).
+- **FOVY** = $2 * atan(tan(FOVX/2) / aspectRatio)$
 
-**Far Plane**: is the plane that is farthest from the virtual camera.
+**Near (clipping) Plane / zNear**: is the plane that is closest to the virtual camera.
+
+**Far (Clipping) Plane / zFar**: is the plane that is farthest from the virtual camera.
 
 **Perspective Projection**: is the process of projecting a 3D scene onto a 2D image plane.
 
 **Orthographic Projection**: is the process of projecting a 3D scene onto a 2D image plane.
 
-**Viewing Frustum**: is the region of space that is visible to the camera.
+**Aspect Ratio**: is the ratio between the width and the height of the Near plane.
 
-**Viewing Matrix**: is the matrix that transforms world coordinates into camera coordinates.
+**Line of Sight (LOS)**: is the line that connects the camera to a point in the scene.
+
+**View Matrix**: is the matrix that transforms world coordinates into camera coordinates.
 
 **Projection Matrix**: is the matrix that transforms camera coordinates into clip coordinates.
 
 **Viewport Matrix**: is the matrix that transforms clip coordinates into screen coordinates.
 
 **Model Matrix**: is the matrix that transforms object coordinates into world coordinates.
-
-
-
-
-**Shader**: is a program that is executed on the GPU to perform a specific task.
-
-**Vertex Shader**: is a program that runs on the GPU and is responsible for transforming vertices from object coordinates into clip coordinates.
-
-**Fragment Shader**: is a program that runs on the GPU and is responsible for computing the color of each pixel.
-
-**Vertex Buffer Object (VBO)**: is a buffer that stores the vertex data for a mesh.
-
-**Index Buffer Object**: is a buffer that stores the index data for a mesh.
-
-**Vertex Array Object (VAO)**: is a collection of vertex buffer objects and index buffer objects.
 
 Textures
 ^^^^^^^^
