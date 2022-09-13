@@ -1,13 +1,21 @@
-import pygame as pg
+"""
+PyOpenGL + Pygame
+"""
+
 import sys
+import pygame as pg
+
+from core.input import Input
 
 SCREEN_SIZE = (512, 512)
 FPS = 60
 
 
-class Base(object):
+class Base:
+    """
+    Base class for a game
+    """
     def __init__(self, screen_size=SCREEN_SIZE):
-
         pg.init()
 
         display_flags = pg.DOUBLEBUF | pg.OPENGL
@@ -27,22 +35,47 @@ class Base(object):
         self.running = True
         self.clock = pg.time.Clock()
 
-    def initialize(self):
-        pass
+        # manage user input
+        self.input = Input()
 
-    def update(self):
-        pass
+    def initialize(self) -> None:
+        """
+        Initialize game
+        :return:
+        """
 
-    def run(self):
+    def update(self) -> None:
+        """
+        Update game objects
+        :return:
+        """
 
+    def run(self) -> None:
+        """
+        Game Life-cycle:
+
+                     +------------------<<<<-----------------+
+                     |                                       |
+        STARTUP >>> INPUT >>> QUIT? >>> NO >>> UPDATE >>> RENDER
+                               |
+                               +>>> YES  >>> SHUTDOWN
+        """
+
+        # STARTUP
         self.initialize()
 
-        # main loop
+        # MAIN LOOP
         while self.running:
+
+            # UPDATE
             self.update()
+
+            # RENDER
             pg.display.flip()
+
+            # pause if necessary to maintain FPS constant
             self.clock.tick(FPS)
 
+        # SHUTDOWN
         pg.quit()
         sys.exit()
-
