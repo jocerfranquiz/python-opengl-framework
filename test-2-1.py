@@ -10,4 +10,5 @@ class Test(Game):
         pass
 
 
-Test().run()
+if __name__ == "__main__":
+    Test().run()
