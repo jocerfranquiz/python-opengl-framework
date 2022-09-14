@@ -5,9 +5,13 @@ This repo for code and exercises from the book *Developing Graphics Frameworks w
 You can download the book [here](https://library.oapen.org/handle/20.500.12657/48838)
 
 ### TODO:
+ - ✅ Add iSort
+ - ✅ Add Flake8
+ - ✅ Add MyPy
  - Add TOX
  - Add Black
  - Add config for flake8
  - Add config for isort
  - Add config for mypy
  - Add unittests
+ - Add setup.py
