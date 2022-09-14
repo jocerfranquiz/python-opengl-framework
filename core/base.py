@@ -69,6 +69,11 @@ class Base:
         # MAIN LOOP
         while self.running:
 
+            # INPUT
+            self.input.update()
+            if self.input.quit:
+                self.running = False
+
             # UPDATE
             self.update()
 
