@@ -18,6 +18,7 @@ but with emphasis in applying pythonic style, unittest, code coverage, and usabi
  - Some classes and functions has been modified to improve performance and/or usability.
  - Repo's history has comments with references to the book's pages
  - The main class ```Base``` and file ```base.py``` had been refactored to ```Game``` and ```game.py``` (it's more intuitive this way)
+ - The file ```openGLUtils.py``` had been refactored to ```opengl_utils.py```
 
 ### TODO:
  - ✅ Add iSort
