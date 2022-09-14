@@ -10,4 +10,4 @@ You can download the book [here](https://library.oapen.org/handle/20.500.12657/4
  - Add config for flake8
  - Add config for isort
  - Add config for mypy
- - Add unitests
+ - Add unittests
