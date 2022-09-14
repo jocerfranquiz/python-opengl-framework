@@ -3,6 +3,7 @@ PyOpenGL + Pygame
 """
 
 import sys
+
 import pygame as pg
 
 from core.input import Input
@@ -25,7 +26,8 @@ class Base:
         pg.display.gl_set_attribute(pg.GL_MULTISAMPLESAMPLES, 4)
 
         # cross-platform compatibility params
-        pg.display.gl_set_attribute(pg.GL_CONTEXT_PROFILE_MASK, pg.GL_CONTEXT_PROFILE_CORE)
+        pg.display.gl_set_attribute(pg.GL_CONTEXT_PROFILE_MASK,
+                                    pg.GL_CONTEXT_PROFILE_CORE)
 
         # screen definition
         self.screen = pg.display.set_mode(screen_size, display_flags)
