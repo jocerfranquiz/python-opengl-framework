@@ -22,4 +22,5 @@ class Input:
 
         for event in pg.event.get():
             if event.type == pg.QUIT:  # close window
+                print("\nQuitting program...")
                 self.quit = True

@@ -7,16 +7,14 @@ import sys
 import pygame as pg
 
 from core.input import Input
-
-SCREEN_SIZE = (512, 512)
-FPS = 60
+from core.settings import FPS, SCREEN_SIZE
 
 
 class Game:
     """
     Game class for a game
     """
-    def __init__(self, screen_size=SCREEN_SIZE):
+    def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE) -> None:
         pg.init()
 
         display_flags = pg.DOUBLEBUF | pg.OPENGL
