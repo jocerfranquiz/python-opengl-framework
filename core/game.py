@@ -12,9 +12,9 @@ SCREEN_SIZE = (512, 512)
 FPS = 60
 
 
-class Base:
+class Game:
     """
-    Base class for a game
+    Game class for a game
     """
     def __init__(self, screen_size=SCREEN_SIZE):
         pg.init()
