@@ -1,0 +1,3 @@
+ - Modify the script to fill and render the triangle and square with different colors
+ - Change the vertex on the script the script to render an hexagon and and octagon
+ - Can you modify the script to render a circle?
