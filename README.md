@@ -24,7 +24,7 @@ but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usab
  - Some classes and functions has been modified to improve performance and/or usability.
  - Repo's history has comments with references to the book's pages
  - The main class ```Base``` and file ```base.py``` had been refactored to ```Game``` and ```game.py``` (it's more intuitive this way)
- - The file ```openGLUtils.py``` had been refactored to ```opengl_utils.py```
+ - The file ```openGLUtils.py``` has been refactored to ```opengl_utils.py```
  - Functions and variables in the book are refactored from ```camelCase``` to ```snake_case```
 
 ## Requirements for the project
