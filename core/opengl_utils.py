@@ -1,4 +1,4 @@
-from OpenGL.GL import (GL_COMPILE_STATUS, GL_FRAGMENT_SHADER, GL_LINK_STATUS,
+from OpenGL.GL import (GL_COMPILE_STATUS, GL_FRAGMENT_SHADER, GL_LINK_STATUS,  # type: ignore
                        GL_RENDERER, GL_SHADING_LANGUAGE_VERSION, GL_VENDOR,
                        GL_VERSION, GL_VERTEX_SHADER, glAttachShader,
                        glCompileShader, glCreateProgram, glCreateShader,

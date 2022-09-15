@@ -1,4 +1,4 @@
-from OpenGL.GL import (GL_POINTS, glBindVertexArray, glDrawArrays,
+from OpenGL.GL import (GL_POINTS, glBindVertexArray, glDrawArrays,  # type: ignore
                        glGenVertexArrays, glPointSize, glUseProgram)
 
 from core.game import Game
