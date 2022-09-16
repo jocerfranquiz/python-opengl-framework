@@ -1,0 +1,4 @@
+- Add keys "m""n" to rotate the triangle to the left and right respectively.
+- Can you change the color by pressing a key?
+- Can you change the size of the triangle by pressing a key?
+- What about the speed of the triangle?
