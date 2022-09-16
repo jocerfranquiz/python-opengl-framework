@@ -1,0 +1,3 @@
+- Edit the code to rotate the triangle around its centroid.
+- Edit the code to change the color with each new position.
+- Replace the triangle with a square.
