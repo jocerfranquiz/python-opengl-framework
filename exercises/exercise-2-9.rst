@@ -1,0 +1,3 @@
+- Center the triangle in the render window.
+- Can you rotate the triangle at the same time?
+- Can you scale the triangle at the same time?
