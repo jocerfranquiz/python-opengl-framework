@@ -1,0 +1,2 @@
+- Change the code to render hexagons instead of triangles.
+- Change the color of the hexagons.
