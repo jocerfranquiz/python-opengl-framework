@@ -13,11 +13,15 @@ All the modules and script are conformed to [PEP8](https://www.python.org/dev/pe
  - [Mypy](http://mypy-lang.org/)
  - [isort](https://pycqa.github.io/isort/)
 
-### The code is based in the book:
-* [Developing Graphics Frameworks with Python and OpenGL](https://library.oapen.org/handle/20.500.12657/48838).
-by *Lee Stemkoski* and *Michael Pascale*.
+### Index
+ - [sandbox](https://github.com/newpaxonian/python-opengl-framework/tree/main/sandbox): This folder contains the test scripts that are implemented in the book to learn and test the framework.
+ - [exercises](https://github.com/newpaxonian/python-opengl-framework/tree/main/exercises): This folder contains exercises proposed for each chapter.
+ - [core](https://github.com/newpaxonian/python-opengl-framework/tree/main/core): This folder contains the core of the framework.
+ - [License](#license)
 
 ## Notes:
+ - The code is based in the book: * [Developing Graphics Frameworks with Python and OpenGL](https://library.oapen.org/handle/20.500.12657/48838).
+by *Lee Stemkoski* and *Michael Pascale*.
  - Project's structure is based on the one proposed in the book, 
 but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usability
  - The code is not fully tested. Please report any issue you find.
@@ -53,6 +57,7 @@ but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usab
 
 
 ### TODO:
+ - Add some screenshots
  - Add TOX
  - Add Black
  - Add config for flake8
