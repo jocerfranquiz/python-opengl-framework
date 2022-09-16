@@ -1,7 +1,7 @@
-from core.game import Game
+from core.base import Base
 
 
-class Test(Game):
+class Test(Base):
 
     def initialize(self):
         print("Initializing game...")

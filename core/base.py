@@ -10,9 +10,9 @@ from core.input import Input
 from core.settings import FPS, SCREEN_SIZE
 
 
-class Game:
+class Base:
     """
-    Game class for a game
+    Base class for a graphics program
     """
     def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE) -> None:
         pg.init()
@@ -52,7 +52,7 @@ class Game:
 
     def run(self) -> None:
         """
-        Game Life-cycle:
+        Base Life-cycle:
 
                      +------------------<<<<-----------------+
                      |                                       |

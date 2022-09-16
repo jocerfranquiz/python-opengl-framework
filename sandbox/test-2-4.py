@@ -3,13 +3,13 @@ from OpenGL.GL import (GL_LINE_LOOP, glBindVertexArray,  # type: ignore
                        glUseProgram)
 
 from core.attribute import Attribute
-from core.game import Game
+from core.base import Base
 from core.opengl_utils import OpenGLUtils
 from core.settings import SCREEN_SIZE
 
 
 # render two shapes
-class Test(Game):
+class Test(Base):
 
     def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE):
         super().__init__(screen_size)
