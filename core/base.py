@@ -30,8 +30,6 @@ class Base:
         # screen definition
         self.screen = pg.display.set_mode(screen_size, display_flags)
 
-        pg.display.set_caption('Graphics Window')
-
         self.running = True
         self.clock = pg.time.Clock()
 
@@ -66,6 +64,8 @@ class Base:
 
         # MAIN LOOP
         while self.running:
+
+            pg.display.set_caption(f'FPS {self.clock.get_fps():.1f}')
 
             # INPUT
             self.input.update()
