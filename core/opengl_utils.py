@@ -16,7 +16,7 @@ class OpenGLUtils:
         """
 
         # specify the required OpenGL/GLSL version
-        shader_code = "#version 330\n" + shader_code
+        shader_code = "#version 430\n" + shader_code
 
         # create an empty shader object and return a pointer
         shader_ref = glCreateShader(shader_type)
