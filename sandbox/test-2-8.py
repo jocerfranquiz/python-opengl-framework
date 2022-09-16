@@ -67,14 +67,8 @@ base_color.r, base_color.g, base_color.b,
         self.base_color.locate_variable(self.program_ref, "base_color")
 
     def update(self):
-        # update data #
-        # # increase x coordinate of translation
-        # self.translation.data[0] += 0.01
-        # # if triangle passes off-screen on the right,
-        # # change translation, so it reappears on the left
-        # if self.translation.data[0] > 1.2:
-        #     self.translation.data[0] = -1.2
 
+        # update data #
         self.translation.data[0] = 0.75 * cos(self.time)
         self.translation.data[1] = 0.75 * sin(self.time)
 
