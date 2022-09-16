@@ -15,6 +15,8 @@ class Base:
     Base class for a graphics program
     """
     def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE) -> None:
+        self.delta_time = 0.0
+
         pg.init()
 
         display_flags = pg.DOUBLEBUF | pg.OPENGL
@@ -35,6 +37,9 @@ class Base:
 
         # manage user input
         self.input = Input()
+
+        # number of seconds application has been running
+        self.time = 0.0
 
     def initialize(self) -> None:
         """
@@ -71,6 +76,11 @@ class Base:
             self.input.update()
             if self.input.quit:
                 self.running = False
+
+            # seconds since iteration of run loop
+            self.delta_time = self.clock.get_time() / 1000
+            # increment time application has been running
+            self.time += self.delta_time
 
             # UPDATE
             self.update()
