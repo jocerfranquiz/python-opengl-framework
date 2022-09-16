@@ -1,0 +1,3 @@
+- Add **WASD** keys to the controls and print the corresponding key
+- Add **Shift** key to the controls and print the message *Bang!*
+- Could you combine the **WASD** and **Shift** keys into a single control? What would it be called?
