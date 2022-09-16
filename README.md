@@ -17,7 +17,7 @@ All the modules and script are conformed to [PEP8](https://www.python.org/dev/pe
  - [sandbox](https://github.com/newpaxonian/python-opengl-framework/tree/main/sandbox): This folder contains the test scripts that are implemented in the book to learn and test the framework.
  - [exercises](https://github.com/newpaxonian/python-opengl-framework/tree/main/exercises): This folder contains exercises proposed for each chapter.
  - [core](https://github.com/newpaxonian/python-opengl-framework/tree/main/core): This folder contains the core of the framework.
- - [License](#license)
+ - [License](https://github.com/newpaxonian/python-opengl-framework/blob/main/LICENSE) GNU General Public License v3.0
 
 ## Notes:
  - The code is based in the book: * [Developing Graphics Frameworks with Python and OpenGL](https://library.oapen.org/handle/20.500.12657/48838).
