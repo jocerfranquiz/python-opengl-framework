@@ -1,0 +1,3 @@
+- Edit the code to move the triangle vertically and horizontally
+- Add a second triangle that moves in the opposite direction
+- Can you change the colour of the triangles as they move?
