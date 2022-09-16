@@ -23,13 +23,13 @@ All the modules and script are conformed to [PEP8](https://www.python.org/dev/pe
  - The code is based in the book: * [Developing Graphics Frameworks with Python and OpenGL](https://library.oapen.org/handle/20.500.12657/48838).
 by *Lee Stemkoski* and *Michael Pascale*.
  - Project's structure is based on the one proposed in the book, 
-but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usability
+but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usability.
  - The code is not fully tested. Please report any issue you find.
  - Some classes and functions has been modified to improve performance and/or usability.
- - Repo's history has comments with references to the book's pages
- - The main class ```Base``` and file ```base.py``` has been refactored to ```Game``` and ```game.py``` (it's more intuitive this way)
- - The file ```openGLUtils.py``` has been refactored to ```opengl_utils.py```
- - Functions and variables in the book are refactored from ```camelCase``` to ```snake_case```
+ - Repo's history has comments with references to the book's pages.
+ - The file ```openGLUtils.py``` has been refactored to ```opengl_utils.py```.
+ - Functions and variables in the book are refactored from ```camelCase``` to ```snake_case```.
+ - Added a settings file to configure the framework.
 
 ## Requirements for the project
  - flake8==5.0.4
@@ -57,11 +57,12 @@ but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usab
 
 
 ### TODO:
- - Add some screenshots
- - Add TOX
- - Add Black
- - Add config for flake8
- - Add config for isort
- - Add config for mypy
- - Add unittests
- - Add setup.py
+ - [x] Add settings.py
+ - [ ] Add some screenshots
+ - [ ] Add TOX
+ - [ ] Add Black
+ - [ ] Add config for flake8
+ - [ ] Add config for isort
+ - [ ] Add config for mypy
+ - [ ] Add unittests
+ - [ ] Add setup.py
