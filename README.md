@@ -60,7 +60,7 @@ but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usab
  - [x] Add settings.py
  - [ ] Add some screenshots
  - [ ] Add TOX
- - [ ] Add Black
+ - [x] Add Black
  - [ ] Add config for flake8
  - [ ] Add config for isort
  - [ ] Add config for mypy
