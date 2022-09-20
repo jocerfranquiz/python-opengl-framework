@@ -3,7 +3,6 @@ from core.base import Base
 
 # check input
 class Test(Base):
-
     def initialize(self):
         print("Initializing program...")
 

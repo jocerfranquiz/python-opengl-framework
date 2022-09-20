@@ -1,6 +1,11 @@
-from OpenGL.GL import (GL_LINE_LOOP, glBindVertexArray,  # type: ignore
-                       glDrawArrays, glGenVertexArrays, glLineWidth,
-                       glUseProgram)
+from OpenGL.GL import (
+    GL_LINE_LOOP,
+    glBindVertexArray,
+    glDrawArrays,
+    glGenVertexArrays,
+    glLineWidth,
+    glUseProgram,
+)
 
 from core.attribute import Attribute
 from core.base import Base
@@ -10,7 +15,6 @@ from core.settings import SCREEN_SIZE
 
 # render six points in a hexagon arrangement
 class Test(Base):
-
     def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE):
         super().__init__(screen_size)
         self.vertex_count = None
@@ -47,9 +51,12 @@ fragColor = vec4(1.0, 1.0, 0.0, 1.0);
 
         # SET UP VERTEX ATTRIBUTE #
         position_data = [
-            [0.8, 0.0, 0.0], [0.4, 0.6, 0.0],
-            [-0.4, 0.6, 0.0], [-0.8, 0.0, 0.0],
-            [-0.4, -0.6, 0.0], [0.4, -0.6, 0.0]
+            [0.8, 0.0, 0.0],
+            [0.4, 0.6, 0.0],
+            [-0.4, 0.6, 0.0],
+            [-0.8, 0.0, 0.0],
+            [-0.4, -0.6, 0.0],
+            [0.4, -0.6, 0.0],
         ]
 
         self.vertex_count = len(position_data)

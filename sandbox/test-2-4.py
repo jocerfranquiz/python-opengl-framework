@@ -1,6 +1,11 @@
-from OpenGL.GL import (GL_LINE_LOOP, glBindVertexArray,  # type: ignore
-                       glDrawArrays, glGenVertexArrays, glLineWidth,
-                       glUseProgram)
+from OpenGL.GL import (
+    GL_LINE_LOOP,
+    glBindVertexArray,
+    glDrawArrays,
+    glGenVertexArrays,
+    glLineWidth,
+    glUseProgram,
+)
 
 from core.attribute import Attribute
 from core.base import Base
@@ -10,7 +15,6 @@ from core.settings import SCREEN_SIZE
 
 # render two shapes
 class Test(Base):
-
     def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE):
         super().__init__(screen_size)
         self.vertex_count_square = None
@@ -50,7 +54,7 @@ fragColor = vec4(1.0, 1.0, 0.0, 1.0);
         position_data_tri = [
             [-0.5, 0.8, 0.0],
             [-0.2, 0.2, 0.0],
-            [-0.8, 0.2, 0.0]
+            [-0.8, 0.2, 0.0],
         ]
 
         self.vertex_count_tri = len(position_data_tri)
@@ -65,13 +69,14 @@ fragColor = vec4(1.0, 1.0, 0.0, 1.0);
             [0.8, 0.8, 0.0],
             [0.8, 0.2, 0.0],
             [0.2, 0.2, 0.0],
-            [0.2, 0.8, 0.0]
+            [0.2, 0.8, 0.0],
         ]
 
         self.vertex_count_square = len(position_data_square)
         position_attribute_square = Attribute("vec3", position_data_square)
-        position_attribute_square.associate_variable(self.program_ref,
-                                                     "position")
+        position_attribute_square.associate_variable(
+            self.program_ref, "position"
+        )
 
     def update(self):
         # using same program to render both shapes

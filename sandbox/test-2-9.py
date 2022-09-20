@@ -1,8 +1,15 @@
 from math import cos, sin
 
-from OpenGL.GL import (GL_COLOR_BUFFER_BIT, GL_TRIANGLES,  # type: ignore
-                       glBindVertexArray, glClear, glClearColor, glDrawArrays,
-                       glGenVertexArrays, glUseProgram)
+from OpenGL.GL import (
+    GL_COLOR_BUFFER_BIT,
+    GL_TRIANGLES,
+    glBindVertexArray,
+    glClear,
+    glClearColor,
+    glDrawArrays,
+    glGenVertexArrays,
+    glUseProgram,
+)
 
 from core.attribute import Attribute
 from core.base import Base

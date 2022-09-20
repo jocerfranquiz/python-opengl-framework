@@ -1,8 +1,15 @@
 from math import cos, sin
 
-from OpenGL.GL import (GL_COLOR_BUFFER_BIT, GL_TRIANGLES,  # type: ignore
-                       glBindVertexArray, glClear, glClearColor, glDrawArrays,
-                       glGenVertexArrays, glUseProgram)
+from OpenGL.GL import (
+    GL_COLOR_BUFFER_BIT,
+    GL_TRIANGLES,
+    glBindVertexArray,
+    glClear,
+    glClearColor,
+    glDrawArrays,
+    glGenVertexArrays,
+    glUseProgram,
+)
 
 from core.attribute import Attribute
 from core.base import Base
@@ -67,7 +74,6 @@ base_color.r, base_color.g, base_color.b,
         self.base_color.locate_variable(self.program_ref, "base_color")
 
     def update(self):
-
         # update data #
         self.translation.data[0] = 0.75 * cos(self.time)
         self.translation.data[1] = 0.75 * sin(self.time)

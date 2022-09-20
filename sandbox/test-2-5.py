@@ -1,6 +1,12 @@
-from OpenGL.GL import (GL_POINTS, glBindVertexArray, glDrawArrays,  # type: ignore
-                       glGenVertexArrays, glLineWidth, glPointSize,
-                       glUseProgram)
+from OpenGL.GL import (
+    GL_POINTS,
+    glBindVertexArray,
+    glDrawArrays,
+    glGenVertexArrays,
+    glLineWidth,
+    glPointSize,
+    glUseProgram,
+)
 
 from core.attribute import Attribute
 from core.base import Base
@@ -52,12 +58,12 @@ color.b, 1.0);
 
         # SET UP VERTEX ATTRIBUTES #
         position_data = [
-            [0.8,  0.0, 0.0],
-            [0.4,  0.6, 0.0],
-            [-0.4,  0.6, 0.0],
-            [-0.8,  0.0, 0.0],
+            [0.8, 0.0, 0.0],
+            [0.4, 0.6, 0.0],
+            [-0.4, 0.6, 0.0],
+            [-0.8, 0.0, 0.0],
             [-0.4, -0.6, 0.0],
-            [0.4, -0.6, 0.0]
+            [0.4, -0.6, 0.0],
         ]
 
         self.vertex_count = len(position_data)
@@ -71,7 +77,7 @@ color.b, 1.0);
             [1.0, 1.0, 0.0],
             [0.0, 1.0, 0.0],
             [0.0, 0.0, 1.0],
-            [0.5, 0.0, 1.0]
+            [0.5, 0.0, 1.0],
         ]
 
         color_attribute = Attribute("vec3", color_data)

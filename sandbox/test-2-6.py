@@ -1,5 +1,10 @@
-from OpenGL.GL import (GL_TRIANGLES, glBindVertexArray, glDrawArrays,  # type: ignore
-                       glGenVertexArrays, glUseProgram)
+from OpenGL.GL import (
+    GL_TRIANGLES,
+    glBindVertexArray,
+    glDrawArrays,
+    glGenVertexArrays,
+    glUseProgram,
+)
 
 from core.attribute import Attribute
 from core.base import Base
