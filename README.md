@@ -33,19 +33,42 @@ but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usab
  - Added a settings file to configure the framework.
 
 ## Requirements for the project
- - flake8==5.0.4
- - isort==5.10.1
- - mccabe==0.7.0
- - mypy==0.971
- - mypy-extensions==0.4.3
  - numpy==1.23.3
- - pycodestyle==2.9.1
- - pyflakes==2.5.0
  - pygame==2.1.2
  - PyOpenGL==3.1.6
  - PyOpenGL-accelerate==3.1.6
+
+### Required for code coverage/quality/formating
+ - aiohttp==3.8.1
+ - aiosignal==1.2.0
+ - astroid==2.12.10
+ - async-timeout==4.0.2
+ - attrs==22.1.0
+ - black==22.8.0
+ - charset-normalizer==2.1.1
+ - click==8.1.3
+ - colorama==0.4.5
+ - dill==0.3.5.1
+ - flake8==5.0.4
+ - frozenlist==1.3.1
+ - idna==3.4
+ - isort==5.10.1
+ - lazy-object-proxy==1.7.1
+ - mccabe==0.7.0
+ - multidict==6.0.2
+ - mypy==0.971
+ - mypy-extensions==0.4.3
+ - pathspec==0.10.1
+ - platformdirs==2.5.2
+ - pycodestyle==2.9.1
+ - pyflakes==2.5.0
+ - pylint==2.15.3
  - tomli==2.0.1
+ - tomlkit==0.11.4
  - typing_extensions==4.3.0
+ - wrapt==1.14.1
+ - yarl==1.8.1
+
 
 ## My system
  - Windows 11 / Ubuntu 20.04
@@ -59,11 +82,11 @@ but with emphasis in applying *pythonic 🐍 style*, code coverage and, and usab
 
 ### TODO:
  - [x] Add settings.py
- - [ ] Add some screenshots
+ - [x] Add some screenshots
  - [ ] Add TOX
  - [x] Add Black
- - [ ] Add config for flake8
- - [ ] Add config for isort
- - [ ] Add config for mypy
+ - [x] Add flake8
+ - [x] Add isort
+ - [x] Add mypy
  - [ ] Add unittests
  - [ ] Add setup.py
