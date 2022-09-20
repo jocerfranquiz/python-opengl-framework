@@ -8,10 +8,11 @@ we only need this four libraries:
  - [PyOpenGL-accelerate](https://pypi.org/project/PyOpenGL-accelerate/)
  - [Numpy](https://numpy.org)
 
-All the modules and script are conformed to [PEP8](https://www.python.org/dev/peps/pep-0008/) style guide by using
+All the modules and scripts are conformed to [PEP8](https://www.python.org/dev/peps/pep-0008/) style guide by using
  - [flake8](https://flake8.pycqa.org/en/latest/)
  - [Mypy](http://mypy-lang.org/)
  - [isort](https://pycqa.github.io/isort/)
+ - [Black](https://black.readthedocs.io/en/stable/)
 
 ### Index
  - [sandbox](https://github.com/newpaxonian/python-opengl-framework/tree/main/sandbox): This folder contains the test scripts that are implemented in the book to learn and test the framework.
