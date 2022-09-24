@@ -1,14 +1,29 @@
-from OpenGL.GL import (GL_COMPILE_STATUS, GL_FRAGMENT_SHADER, GL_LINK_STATUS,  # type: ignore
-                       GL_RENDERER, GL_SHADING_LANGUAGE_VERSION, GL_VENDOR,
-                       GL_VERSION, GL_VERTEX_SHADER, glAttachShader,
-                       glCompileShader, glCreateProgram, glCreateShader,
-                       glDeleteProgram, glDeleteShader, glGetProgramInfoLog,
-                       glGetProgramiv, glGetShaderInfoLog, glGetShaderiv,
-                       glGetString, glLinkProgram, glShaderSource)
+from OpenGL.GL import (
+    GL_COMPILE_STATUS,
+    GL_FRAGMENT_SHADER,
+    GL_LINK_STATUS,
+    GL_RENDERER,
+    GL_SHADING_LANGUAGE_VERSION,
+    GL_VENDOR,
+    GL_VERSION,
+    GL_VERTEX_SHADER,
+    glAttachShader,
+    glCompileShader,
+    glCreateProgram,
+    glCreateShader,
+    glDeleteProgram,
+    glDeleteShader,
+    glGetProgramInfoLog,
+    glGetProgramiv,
+    glGetShaderInfoLog,
+    glGetShaderiv,
+    glGetString,
+    glLinkProgram,
+    glShaderSource,
+)
 
 
 class OpenGLUtils:
-
     @staticmethod
     def initialize_shader(shader_code, shader_type):
         """
@@ -47,13 +62,11 @@ class OpenGLUtils:
     @staticmethod
     def initialize_program(vertex_shader_code, fragment_shader_code):
         vertex_shader_ref = OpenGLUtils.initialize_shader(
-            vertex_shader_code,
-            GL_VERTEX_SHADER
+            vertex_shader_code, GL_VERTEX_SHADER
         )
 
         fragment_shader_ref = OpenGLUtils.initialize_shader(
-            fragment_shader_code,
-            GL_FRAGMENT_SHADER
+            fragment_shader_code, GL_FRAGMENT_SHADER
         )
 
         # create empty program object and store reference to it
@@ -77,7 +90,7 @@ class OpenGLUtils:
             glDeleteProgram(program_ref)
 
             # convert byte string to character string
-            error_message = '\n' + error_message.decode('utf-8')
+            error_message = "\n" + error_message.decode("utf-8")
 
             # raise exception: halt application and print error message
             raise Exception(error_message)
@@ -92,7 +105,11 @@ class OpenGLUtils:
         """
         print("Vendor: " + glGetString(GL_VENDOR).decode("utf-8"))
         print("Renderer: " + glGetString(GL_RENDERER).decode("utf-8"))
-        print("OpenGL version supported: " +
-              glGetString(GL_VERSION).decode("utf-8"))
-        print("GLSL version supported: " +
-              glGetString(GL_SHADING_LANGUAGE_VERSION).decode("utf-8"))
+        print(
+            "OpenGL version supported: "
+            + glGetString(GL_VERSION).decode("utf-8")
+        )
+        print(
+            "GLSL version supported: "
+            + glGetString(GL_SHADING_LANGUAGE_VERSION).decode("utf-8")
+        )

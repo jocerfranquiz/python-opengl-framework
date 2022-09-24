@@ -1,9 +1,14 @@
-from OpenGL.GL import (glGetUniformLocation, glUniform1f, glUniform1i,  # type: ignore
-                       glUniform2f, glUniform3f, glUniform4f)
+from OpenGL.GL import (
+    glGetUniformLocation,
+    glUniform1f,
+    glUniform1i,
+    glUniform2f,
+    glUniform3f,
+    glUniform4f,
+)
 
 
 class Uniform(object):
-
     def __init__(self, data_type, data):
         # type of data:
         # int | bool | float | vec2 | vec3 | vec4
@@ -33,8 +38,14 @@ class Uniform(object):
         elif self.dataType == "vec2":
             glUniform2f(self.variable_ref, self.data[0], self.data[1])
         elif self.dataType == "vec3":
-            glUniform3f(self.variable_ref, self.data[0], self.data[1],
-                        self.data[2])
+            glUniform3f(
+                self.variable_ref, self.data[0], self.data[1], self.data[2]
+            )
         elif self.dataType == "vec4":
-            glUniform4f(self.variable_ref, self.data[0], self.data[1],
-                        self.data[2], self.data[3])
+            glUniform4f(
+                self.variable_ref,
+                self.data[0],
+                self.data[1],
+                self.data[2],
+                self.data[3],
+            )

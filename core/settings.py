@@ -1,4 +1,2 @@
-
-
 SCREEN_SIZE = (512, 512)
 FPS = 60

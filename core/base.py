@@ -14,6 +14,7 @@ class Base:
     """
     Base class for a graphics program
     """
+
     def __init__(self, screen_size: tuple[int, int] = SCREEN_SIZE) -> None:
         self.delta_time = 0.0
 
@@ -26,8 +27,9 @@ class Base:
         pg.display.gl_set_attribute(pg.GL_MULTISAMPLESAMPLES, 4)
 
         # cross-platform compatibility params
-        pg.display.gl_set_attribute(pg.GL_CONTEXT_PROFILE_MASK,
-                                    pg.GL_CONTEXT_PROFILE_CORE)
+        pg.display.gl_set_attribute(
+            pg.GL_CONTEXT_PROFILE_MASK, pg.GL_CONTEXT_PROFILE_CORE
+        )
 
         # screen definition
         self.screen = pg.display.set_mode(screen_size, display_flags)
@@ -70,7 +72,7 @@ class Base:
         # MAIN LOOP
         while self.running:
 
-            pg.display.set_caption(f'FPS {self.clock.get_fps():.1f}')
+            pg.display.set_caption(f"FPS {self.clock.get_fps():.1f}")
 
             # INPUT
             self.input.update()

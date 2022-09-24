@@ -1,8 +1,16 @@
 import numpy
-from OpenGL.GL import (GL_ARRAY_BUFFER, GL_FLOAT, GL_INT,  # type: ignore
-                       GL_STATIC_DRAW, glBindBuffer, glBufferData,
-                       glEnableVertexAttribArray, glGenBuffers,
-                       glGetAttribLocation, glVertexAttribPointer)
+from OpenGL.GL import (
+    GL_ARRAY_BUFFER,
+    GL_FLOAT,
+    GL_INT,
+    GL_STATIC_DRAW,
+    glBindBuffer,
+    glBufferData,
+    glEnableVertexAttribArray,
+    glGenBuffers,
+    glGetAttribLocation,
+    glVertexAttribPointer,
+)
 
 
 class Attribute:
