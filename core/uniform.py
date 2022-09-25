@@ -1,10 +1,12 @@
 from OpenGL.GL import (
+    GL_TRUE,
     glGetUniformLocation,
     glUniform1f,
     glUniform1i,
     glUniform2f,
     glUniform3f,
     glUniform4f,
+    glUniformMatrix4fv,
 )
 
 
@@ -49,3 +51,5 @@ class Uniform(object):
                 self.data[2],
                 self.data[3],
             )
+        elif self.dataType == "mat4":
+            glUniformMatrix4fv(self.variable_ref, 1, GL_TRUE, self.data)
