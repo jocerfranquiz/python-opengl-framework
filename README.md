@@ -1,5 +1,7 @@
 # python-opengl-framework
 
+_UPDATE 2022-12-19_: This project is on stand-by. PyOpenGL is a good but old library and it hasn't been mantained in a long time. I'he to decide if migrate the project to use ModernGL or just use Ursina Engine.
+
 This is an implementation of an **OpenGL Graphics Framework with Python** for educational purposes. For the implementation 
 we only need this four libraries:
 
